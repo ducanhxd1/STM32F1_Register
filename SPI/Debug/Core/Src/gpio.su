@@ -1,0 +1,5 @@
+../Core/Src/gpio.c:42:6:MX_GPIO_Init	16	static
+../Core/Src/gpio.c:51:6:GPIOx_Init	16	static
+../Core/Src/gpio.c:80:6:GPIO_WriteBit	16	static
+../Core/Src/gpio.c:88:9:GPIO_ReadPin	24	static
+../Core/Src/gpio.c:100:6:GPIO_TogglePin	16	static

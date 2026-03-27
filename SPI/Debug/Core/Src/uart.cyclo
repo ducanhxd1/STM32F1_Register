@@ -1,0 +1,9 @@
+../Core/Src/uart.c:17:6:UARTx_Init	8
+../Core/Src/uart.c:91:6:UARTx_SendChar	2
+../Core/Src/uart.c:97:6:UARTx_SendString	2
+../Core/Src/uart.c:105:6:UART_ReceiveChar	2
+../Core/Src/uart.c:111:6:Ring_buffer_char_init	1
+../Core/Src/uart.c:121:6:Ring_buffer_char_put	2
+../Core/Src/uart.c:141:9:Ring_buffer_char_get	2
+../Core/Src/uart.c:158:6:Ring_buffer_char_is_empty	1
+../Core/Src/uart.c:163:6:Ring_buffer_char_is_full	1
