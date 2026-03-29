@@ -18,15 +18,13 @@ typedef enum {
 } Pins_I2C;
 
 typedef enum {
-    I2C_MODE_STANDARD = 0,
-    I2C_MODE_FAST     = 1
-} I2C_Mode;
+    I2C_SPEED_100K = 0,
+    I2C_SPEED_400K = 1,
+} I2C_Speed;
 
-typedef enum {
-    I2C_DUTY_1_2  = 0, // Fast mode 1:2
-    I2C_DUTY_16_9 = 1  // Fast mode 16/9
-} I2C_Duty;
 
-void I2Cx_init(I2C_TypeDef *I2Cx, Pins_I2C pins, uint32_t speed, I2C_Mode mode, I2C_Duty duty);
 
+void I2Cx_init(I2C_TypeDef *I2Cx, Pins_I2C pins, uint32_t speed);
+void I2Cx_Read(I2C_TypeDef *I2Cx, uint8_t addrSlave, uint8_t addrReg, uint8_t* data, uint8_t size);
+uint8_t I2Cx_Write(I2C_TypeDef *I2Cx, uint8_t addrSlave, uint8_t addrReg, uint8_t* data, uint8_t size);
 #endif /* _I2C_H_ */
